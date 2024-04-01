@@ -41,6 +41,7 @@ exports.signin = async (req, res, next) => {
     }
 
     sendTokenResponse(user, 200, res);
+    
   } catch (error) {
     next(error);
   }
